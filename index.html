@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Stats preview card component</title>
+
+    <link rel="stylesheet" href="./design/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__content">
+          <div class="card__summary">
+            <h1 class="heading--primary">
+              Get <span>insights</span> that help your business grow.
+            </h1>
+            <p class="card__text">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
+          <div class="card__stats">
+            <div class="card__stat card__stat--1">
+              <span class="stats stats__number">10k+</span>
+              <span class="stats stats__text">companies</span>
+            </div>
+            <div class="card__stat card__stat--2">
+              <span class="stats stats__number">314</span>
+              <span class="stats stats__text">templates</span>
+            </div>
+            <div class="card__stat card__stat--3">
+              <span class="stats stats__number">12m+</span>
+              <span class="stats stats__text">queries</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__img--container">
+          <img
+            srcset="
+              ./images/image-header-mobile.jpg  540w,
+              ./images/image-header-desktop.jpg 654w
+            "
+            sizes="(max-width: 700px) 40vw, 545w"
+            alt="Image of people working"
+            class="card__img"
+            src="./images/image-header-desktop.jpg"
+          />
+          <div class="card__img--overlay"></div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/AbdulBasit619" target="_blank"
+          >Abdul Basit</a
+        >.
+      </div>
+    </div>
+  </body>
+</html>
